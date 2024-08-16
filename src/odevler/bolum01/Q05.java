@@ -7,10 +7,7 @@ public class Q05 {
         System.out.println("(9.5x4.5-2.5x3)/(45.5-3.5)");
         System.out.println("Solution:  ");
 
-        double process1 = 9.5 * 4.5 - 2.5 * 3 ;
-        double process2 = 45.5 - 3.5 ;
-        double division = process1 / process2 ;
-        System.out.println(division) ;
+        System.out.println((9.5*4.5-2.5*3)/(45.5-3.5)) ;
 
 
     }
