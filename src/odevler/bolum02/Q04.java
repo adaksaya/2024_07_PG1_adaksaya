@@ -9,13 +9,13 @@ public class Q04 {
     The program prompts the user to enter a number in pounds, converts it
   to kilograms, and displays the result. One pound is 0.454 kilograms.
 
-  $$$$$$$ Not: inputu float olarak girdiğimde InputMismatchException hatası alıyorum orayı düzeltemedim, öncekilerde sorunsuz çalışıyordu oysa... :D help
+  $$$$$$$ NOT: inputu double olarak girdiğimde InputMismatchException hatası alıyorum orayı düzeltemedim, öncekilerde sorunsuz çalışıyordu oysa... :D help
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number of pounds: ");
         double pounds = sc.nextDouble();
-        double kilograms = pounds * 0.454 ;
+        double kilograms = pounds * 0.454D ;
         System.out.println( pounds + " pounds is " + kilograms + " kilograms") ;
 
     }
