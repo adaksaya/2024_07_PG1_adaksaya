@@ -16,7 +16,7 @@ public class Q04 {
         System.out.print("Enter a number of pounds: ");
         double pounds = sc.nextDouble();
         double kilograms = pounds * 0.454D ;
-        System.out.println( pounds + " pounds is " + kilograms + " kilograms") ;
+        System.out.println( pounds + " pounds is " + kilograms + " kilograms ") ;
 
     }
 
