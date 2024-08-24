@@ -20,11 +20,11 @@ current population is 312,032,486 and one year has 365 days.
         double years = sc.nextDouble();
         int current_population = 312032486 ;
         int YearsToSecond = 365*24*3600 ;
-        double birthNumbInYears = YearsToSecond / 7 ;
-        double deathNumbInYears = YearsToSecond / 13 ;
-        double immigrantNumbInYears = YearsToSecond / 45 ;
+        double birthNumbInYears = YearsToSecond / 7D ;
+        double deathNumbInYears = YearsToSecond / 13D ;
+        double immigrantNumbInYears = YearsToSecond / 45D ;
         double population = (birthNumbInYears + immigrantNumbInYears - deathNumbInYears) * years + current_population ;
-        System.out.println("The population of " + years + " years is  " + (int) population);
+        System.out.println("The population of " + years + "  years is  " + (int) population);
 
     }
 }
