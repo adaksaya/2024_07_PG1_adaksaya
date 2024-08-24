@@ -1,4 +1,5 @@
 package odevler.bolum02;
+import java.util.Scanner;
 public class Q08 {
     /*
     (Current time)
@@ -7,34 +8,23 @@ public class Q08 {
      displays the time in the specified time zone.
      */
     public static void main(String[] args) {
-        // Obtain the total milliseconds since midnight, Jan 1, 1970
-        long totalMilliSeconds = System.currentTimeMillis();
+        Scanner scanner = new Scanner(System.in);
 
-        // Obtain the total seconds since midnight, Jan 1, 1970
-        long totalMilliseconds;
-        long totalSeconds = totalMilliseconds / 1000;
+        System.out.println("Enter the time zone offset to GMT: ");
+        long offset = scanner.nextLong();
+        long totalMillieSeconds = System.currentTimeMillis();
+        long totalSeconds = totalMillieSeconds / 1000; // toplam saniyeyi bul (1000 ms = 1 sn)
+        long currentSeconds = totalSeconds % 60; // güncel saniye
 
-        // Compute the current second in the minute in the hour
-        long currentSecond = totalSeconds % 60;
+        long totalMinutes = totalSeconds / 60; // toplam dakikayı bul (60 saniye = 1 dakika)
+        long currentMinutes = totalMinutes % 60; // güncel dakika
 
-        // Obtain the total minutes
-        long totalMinutes = totalSeconds / 60;
+        long totalHours = totalMinutes / 60; // toplam saat'i bul (60 dakika = 1 saat)
+        long currentHours = (totalHours + offset) % 24; // kullanıcının girdigi offset degerine göre belirlenen güncel saat
 
-        // Compute the current minute in the hour
-        long currentMinute = totalMinutes % 60;
-
-        // Obtain the total hours
-        long totalHours = totalMinutes / 60;
-
-        // Compute the current hour
-        long currentHour = totalHours % 24;
-
-        // Display results
-        System.out.println("Current time is " + currentHour + ":"
-                + currentMinute + ":" + currentSecond + " GMT");
-
-
-
-
+        System.out.println("The current time is " + currentHours + ":" + currentMinutes + ":" + currentSeconds);
     }
 }
+
+
+
