@@ -22,8 +22,7 @@ For example, the input 1156 represents 11 dollars and 56 cents.
         numbOfCents = numbOfCents % 5;
         int numbOfPennies = numbOfCents;
 
-        System.out.println("Your amount is : " + numbOfOneDollars + " dollars, " + numbOfQuarterCents + " quartercents, " + numbOfDimeCents + " dimecents, " + numbOfNickelCents + " nickelcents, " + numbOfPennies + " cents. ");
-
+        System.out.println("Your amount is " + numbOfOneDollars + " dollars, " + numbOfQuarterCents + " quartercents, " + numbOfDimeCents + " dimecents, " + numbOfNickelCents + " nickelcents, " + numbOfPennies + " cents");
 
 
     }
