@@ -14,7 +14,7 @@ enter the sum of these three integers.
         Random numb2 = new Random();
         Random numb3 = new Random();
     int number1 = numb1.nextInt(101);
-    int number2 = numb2.nextInt(101);
+    int number2 = numb2.nextInt(101);  // 0-100 aralığında random sayılar
     int number3 = numb3.nextInt(101);
     Scanner input = new Scanner(System.in);
     System.out.println("What is " + number1 + " + " + number2 + " + " + number3 + " ? ");
