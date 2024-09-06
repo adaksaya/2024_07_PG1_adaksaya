@@ -11,6 +11,7 @@ __________________________________
 ********************  (boolean-expression ? expression1 : expression2);  *******************
 The result of this conditional expression is expression1 if boolean-expression is true;
 otherwise the result is expression2.
+System.out.println((num % 2 == 0) ? "num is even" : "num is odd");
 ----------------------------------
      */
     public static void main(String[] args) {
